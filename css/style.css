@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    font-family:verdana;
+}
+body{
+    background-color: rgb(87, 86, 86);
+    height: 100vh;
+}
+header {
+    padding: 0px 10px;
+    background-color: rgb(5, 5, 5);
+    z-index: 1;
+    position: relative;
+}
+
+/* Estilo para a interface dentro do header */
+.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 ;
+    padding: 0;
+}
+
+/* Estilo para o logo */
+.logo-adaga {
+    display: flex;
+    align-items: center;
+}
+
+.logo-adaga img {
+    max-width: 60px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Estilo para o título */
+.titulo {
+    flex-grow: 1;
+    font-size: 20px;
+    color: rgb(241, 235, 235);
+
+}
+
+/* Estilo para o menu - combo,match,builds */
+.menu {
+    margin-right: -650px;
+    
+}
+.btn {
+    position: relative;
+    margin: 30px;
+    height: 100px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 100%;
+        height:100%;
+
+        background-color: rgb(236, 7, 7);
+        
+        z-index: -1;
+        transition: .7s ease;
+    }
+}
+.build{
+    &::before{
+        width: 0;
+        height: 281%;
+    }
+    &:hover{
+        &:before{
+            width: 100%;
+        }
+    }
+}
+.match{
+    &::before{
+        width: 0;
+        height: 281%;
+    }
+    &:hover{
+        &:before{
+            width: 100%;
+        }
+    }
+}
+.combo{
+    &::before{
+        width: 0;
+        height: 281%;
+    }
+    &:hover{
+        &:before{
+            width: 100%;
+        }
+    }
+}
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #f1f1f1;
+    padding: 10px 60px;
+
+}
+
