@@ -5,8 +5,13 @@
 
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
 body{
-    background-color: rgb(87, 86, 86);
+    background-color: rgb(5, 5, 5);
+    height: 100px;
 }
 
 header {
@@ -67,4 +72,52 @@ header {
     background-color: #f00000;
     color: #000000; 
 }
+
+
+.introducao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 40px;
+    padding: 30px;
+}
+
+.introducao-conteudo {
+    align-self: end;
+    padding-bottom: 80px;
+    max-width: 100%;
+}
+
+.introducao h1 {
+    margin-bottom: 32px;
+    font-size: 64px;
+    line-height: 1.125;
+    color: #fafafa;
+}
+
+.introducao p {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #f5f4f4;
+}
+
+.introducao a {
+    display: inline-block;
+    padding: 16px 32px;
+    background: linear-gradient(rgb(202, 85, 85),rgb(211, 57, 57) );
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0,0,0, 0.1);
+    text-transform: uppercase;
+    color: rgb(42, 42, 44);
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.texto {
+    align-self: end;
+    padding-bottom: 80px;
+}
+
 
