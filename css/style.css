@@ -1,7 +1,11 @@
+/* teste*/
 *{
     margin: 0;
     font-family:verdana;
+    margin-right: 0;
+
 }
+
 img {
     max-width: 100%;
     display: block;
@@ -9,13 +13,11 @@ img {
 body{
     background-color: rgb(5, 5, 5);
     height: 100px;
-
 }
+
 header {
-    padding: 0px 10px;
-    background-color: rgb(5, 5, 5);
-    z-index: 1;
-    position: relative;
+    padding: 10px;
+    background-color: #000000;
 }
 
 .interface {
@@ -26,6 +28,7 @@ header {
 .completo{
     display: grid;
     grid-auto-flow: column;
+    place-items: center;
     gap: 20px;
     justify-content: start;
 }
@@ -36,62 +39,39 @@ header {
 
 .logo-adaga img {
     max-width: 60px;
-    height: auto;
-    margin-right: 10px;
 }
 
 .titulo {
     font-size: 20px;
-    color: rgb(241, 235, 235);
-    margin-top: 30px;
-
-
+    color: #ffffff;
 }
 
 .menu {
     display: grid;
     grid-auto-flow: column;
-    
 }
 
 
 .item {
     font-weight: bold;
-    text-decoration: none;
-    color: #f1f1f1;
-    display: inline-block;
-    position: relative;
-
-    margin: 30px;
     font-size: 20px;
-    padding: 10px 10px;
+    text-decoration: none;
+    color: #ffffff;
 
-    &:before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
 
-        width: 100%;
-        height:100%;
+    align-content: center;
+    text-align: center;
 
-        background-color: rgb(236, 7, 7);
-        
-        z-index: -1;
-        transition: .7s ease;
-    }
+    border-radius: 12px;
+    transition: background-color 0.7s ease, color 0.4s ease;
+}
 
-    &::before{
-        width: 0;
-        height: 150%;
-    }
-
-    &:hover{
-        &:before{
-            width: 100%;
-        }
-    }
+.item:hover
+{
+    background-color: #f00000;
+    color: #000000; 
 }
 
 
