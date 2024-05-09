@@ -79,8 +79,7 @@ header {
 .introducao {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0px 40px;
-    padding: 30px;
+    
 }
 
 .introducao-conteudo {
