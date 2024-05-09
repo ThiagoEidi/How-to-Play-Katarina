@@ -1,7 +1,11 @@
 /* teste*/
 *{
     margin: 0;
+<<<<<<< HEAD
     font-family:Spiegel, "Arial Narrow", Arial, sans-serif;
+=======
+    font-family:verdana;
+>>>>>>> 5746432f44cd44912cb42c37a484daccf40dd46a
     margin-right: 0;
 
 }
@@ -23,14 +27,13 @@ header {
     width: 100%;
     height: 110px;
     position: fixed;
-    z-index: 3;
-
+    z-index: 2;
 }
 
 .interface {
     display: grid;
     grid-template-columns: 20% 30%;
-    gap: 1250px;
+    justify-content: space-between;
 }
 
 .completo{
@@ -85,9 +88,8 @@ header {
 
 .introducao {
     gap: 80px 40px;
-    padding: 30px;
     display: grid;
-    grid-template-columns: 2485px;
+    grid-template-columns: 100%;
     grid-column: 200px 200px 200px;
     text-align: center;
     justify-content: center;
@@ -141,14 +143,16 @@ header {
 }
 .secao-video {
     width: 100%;
-    height: 1300px;
+    height: 1100px;
     position: relative;
+    
 }
 .video-background {
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: 0;
+    opacity: 0.4;
 }
 
 .video-background video{
